@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / E com app</title>
+    <meta name="author" description="Piyush savale">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="heading  grow-shrink-basis fixed top-0 left-0">
+        <nav class="navbar">
+          <div class="left-nav">
+            <div class="heading-title name">
+              <a href="./index.html">
+                TURNTUP
+              </a>
+            </div>
+          </div>
+  
+          <div class="right-nav">
+            <div class="search-navbar">
+              <input type="text" placeholder="Search" />
+              <button class="btn-icon">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+  
+            <div class="d-flex">
+              
+              <button class="btn-icon">               
+                <span class="nav-icon material-icons-outlined">
+                  favorite_border
+                </span>
+              </button>
+              <button class="btn-icon">
+                <span class="nav-icon material-icons-outlined">
+                  <a href="./cart.html">
+                  shopping_cart
+                  </a>
+                  </span>
+              </button>
+              <button class="btn-icon burger">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+        </div>
+        
+        <div class="products-page d-flex">
+          <aside class="side-bar">
+            <h3 class="heading-3">Filter</h3>
+          
+            <h2 class = "heading-3 ">Sort By</h2>
+          <div class="d-flex align-center gap">
+          <input data-key="lowtohigh"id="lowtohigh"type="radio" name="sort">
+          <label data-key="lowtohigh"for="lowtohigh">Price -Low To High </label>
+          </div>
+          <div class="d-flex align-center gap">
+          <input data-key="hightolow"id="hightolow" type="radio" name="sort">
+          <label data-key="hightolow"for="hightolow">Price - High To Low</label>
+          </div>
+            <h2 class = "heading-3"> Discount</h2>
+            <div class="d-flex align-center gap">
+              <input data-key="discount" data-discount="50" id="50andabove"type="radio" name="sort">
+              <label data-key="discount" data-discount="50"for="50andabove">50% and above</label>
+              </div>
+              <div class="d-flex align-center gap">
+              <input data-key="discount"data-discount="30"id="30andabove" type="radio" name="sort">
+              <label data-key="discount"data-discount="30"for="30andabove">30% and above</label>
+              </div>
+              <div class="d-flex align-center gap">
+                <input data-key="discount"data-discount="20"id="20andabove"type="radio" name="sort">
+                <label data-key="discount"data-discount="20"for="20andabove">20% and above </label>
+              
+        </div>
+        </aside>
+        <div class = "product-container d-flex wrap gap "id="products"></div>
+          </div>
+
+          
+
+        </div>
+        
+    <script type="module" src="./index.js"></script>
+</html>

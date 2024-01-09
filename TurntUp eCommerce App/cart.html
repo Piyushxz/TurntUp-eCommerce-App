@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="heading  grow-shrink-basis fixed top-0 left-0">
+        <nav class="navbar">
+          <div class="left-nav">
+            <div class="heading-title name">
+              <a href="./index.html">
+                TURNTUP
+              </a>
+            </div>
+          </div>
+  
+          <div class="right-nav">
+            <div class="search-navbar">
+              <input type="text" placeholder="Search" />
+              <button class="btn-icon">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+  
+            <div>
+              <button class="btn-icon">   
+                <span  class="nav-icon material-icons-outlined">
+                  favorite_border
+                  </span>
+                
+              </button>
+              <button class="btn-icon">
+                <span class="nav-icon material-icons-outlined">
+                  shopping_cart
+                  </span>
+              </button>
+              <button class="btn-icon burger">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+    <main class="main justify-center">
+        <h2 class="heading-2 d-flex justify-center">Your Cart</h2>
+        <main class="d-flex gap  justify-center">
+          <div class = " wrap gap align-center "id="cart"></div>
+        <div class ="final-price d-flex direction-column gap shadow padding-all-16 card-component">
+          <div>Price Details</div>
+          <div class="d-flex align-center justify-space-between">
+            <span>Price (<span class = "item-count"></span>) items </span>
+            <span>Rs. <span class="product-price"></span></span>
+          </div>
+          <div class="d-flex align-center justify-space-between">
+            <span>Discount</span>
+            <span>Rs.<span class="discount-amount"></span></span>
+          </div>
+          <div class="d-flex align-center justify-space-between">
+            <span>Delivery charge</span>
+            <span>Rs 100</span>
+          </div>
+          <div class="d-flex align-center justify-space-between">
+            <span>Total amount</span>
+            <span>Rs.<span class="total-amount"></span>
+          </div>
+              <button class="button btn-primary cursor btn btn-outline btn-outline-prime place-order">
+                Place Order
+              </button>      
+        </div>
+    
+      </main>
+    </main>
+      <script type="module" src="./cart.js"></script>
+</body>
+</html>
